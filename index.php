@@ -10,9 +10,10 @@ if(isset($_POST['email']) && $_POST['email'] != '' && isset($_POST['name']) && $
     $email = $_POST['email']; 
     $phone = $_POST['phone'];
     $website = $_POST['website'];
-    $to = 'info@alpharoar-uae.com';
+    $to = 'a.malek@orbit2i.ca';
+    // $to = 'info@alpharoar-uae.com';
     $subject = 'Schedule Your Appointment';
-    // $to = 'a.malek@orbit2i.ca';
+
 
     $msg = '
     <html>
@@ -21,8 +22,8 @@ if(isset($_POST['email']) && $_POST['email'] != '' && isset($_POST['name']) && $
     </head>
     <body>
         <h4 style="display:rlt;">From: '.$name.'</h4>
-        <h4 style="display:rlt;">From: '.$phone.'</h4>
-        <h4 style="display:rlt;">From: '.$website.'</h4>
+        <h4 style="display:rlt;">Phone: '.$phone.'</h4>
+        <h4 style="display:rlt;">Website: '.$website.'</h4>
     </body>
     </html>
     ';
@@ -34,8 +35,9 @@ if(isset($_POST['email']) && $_POST['email'] != '' && isset($_POST['name']) && $
     // More headers
     $headers .= 'From: <minakaramcs@gmail.com>' . "\r\n";  
 
-    mail($to,$subject,$msg,$headers);
-    $message_sent = true;
+    if(mail($to,$subject,$msg,$headers)){
+        $message_sent = true;
+    }
 }
 
 
@@ -55,7 +57,7 @@ if(isset($_POST['email']) && $_POST['email'] != '' && isset($_POST['name']) && $
     <link
       rel="shortcut icon"
       type="image/x-icon"
-      href="assets/images/fav.png"
+      href="assets/images/favicon.png"
     />
     <!-- Bootstrap v4.4.1 css -->
     <link
@@ -119,11 +121,11 @@ if(isset($_POST['email']) && $_POST['email'] != '' && isset($_POST['name']) && $
                 <div class="col-lg-2">
                   <div class="logo-part">
                     <a href="index.html"
-                      ><img src="assets/images/logo-dark.png" alt=""
+                      ><img src="assets/images/logo.png" alt="orbit2i"
                     /></a>
                   </div>
                 </div>
-                <div class="col-lg-10 text-right">
+                <div class="col-lg-10 text-right d-flex justify-content-end align-items-center">
                   <ul class="rs-contact-info">
                     <li class="contact-part">
                       <i class="flaticon-location"></i>
@@ -177,13 +179,12 @@ if(isset($_POST['email']) && $_POST['email'] != '' && isset($_POST['name']) && $
                   </div>
                   <div id="appointment-messages"></div>
 
-
                   <?php 
-                        if( $message_send ):
+                        if( $message_sent ):
 
                     ?>
 
-                       <h4> Data sent successfully, we will contact you. </h4>
+                       <h4 class="text-center"> <i class="fa fa-check"></i> Data sent successfully, we will contact you.</h4>
                     
                     <?php 
                        else:
@@ -424,7 +425,7 @@ if(isset($_POST['email']) && $_POST['email'] != '' && isset($_POST['name']) && $
                 <div class="services-icon">
                   <div class="image-part">
                     <img
-                      src="assets/images/services/main-home/icons/3.png"
+                      src="assets/images/services/style1/3.png"
                       alt=""
                     />
                   </div>
@@ -661,7 +662,7 @@ if(isset($_POST['email']) && $_POST['email'] != '' && isset($_POST['name']) && $
           <div class="row">
             <div class="col-lg-3 col-md-12 col-sm-12 footer-widget">
               <div class="footer-logo mb-30">
-                <a><img src="assets/images/logo-dark.png" alt="" /></a>
+                <a><img src="assets/images/logo.png" alt="orbit2i" /></a>
               </div>
             </div>
             <div class="col-lg-3 col-md-12 col-sm-12 pl-45 md-pl-15 md-mb-30">
@@ -714,7 +715,7 @@ if(isset($_POST['email']) && $_POST['email'] != '' && isset($_POST['name']) && $
             <div class="col-lg-12">
               <div class="copyright text-center">
                 <p>
-                  &copy; <span id="current-year">2024</span> All Rights
+                  &copy; <span id="currentYear"></span> All Rights
                   Reserved.
                   <a href="#">Orbit2i</a>
                 </p>
@@ -800,5 +801,11 @@ if(isset($_POST['email']) && $_POST['email'] != '' && isset($_POST['name']) && $
     <script src="assets/js/appointment.form.js"></script>
     <!-- main js -->
     <script src="assets/js/main.js"></script>
+    <script>
+    // Get the current year
+    const year = new Date().getFullYear();
+    // Set the current year in the span with id 'currentYear'
+    document.getElementById('currentYear').textContent = year;
+</script>
   </body>
 </html>

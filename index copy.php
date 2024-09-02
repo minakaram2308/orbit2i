@@ -36,8 +36,9 @@ if(isset($_POST['email']) && $_POST['email'] != '' && isset($_POST['message']) &
     // More headers
     $headers .= 'From: <minakaramcs@gmail.com>' . "\r\n";  
 
-    mail($to,$subject,$msg,$headers);
-    $message_sent = true;
+    if(mail($to,$subject,$msg,$headers)){
+        $message_sent = true;
+    }
 }
 
 
@@ -69,7 +70,7 @@ if(isset($_POST['email']) && $_POST['email'] != '' && isset($_POST['message']) &
 
 
                     <?php 
-                        if( $message_send ):
+                        if($message_sent):
 
                     ?>
 

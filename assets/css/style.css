@@ -2167,7 +2167,7 @@ blockquote cite:before {
   position: relative;
 }
 .full-width-header .rs-header .topbar-area {
-  padding-top: 20px;
+  padding-top: 10px;
   padding-bottom: 10px;
 }
 .full-width-header .rs-header .topbar-area .rs-contact-info .contact-part {
@@ -10052,6 +10052,9 @@ body .search-modal .close:hover {
 /*------------------------------------
     35. Footer Section CSS
 ------------------------------------*/
+.logo-part img{
+  height: 80px;
+}
 .rs-footer {
   background: url(../images/bg/footer-bg.png);
   background-color: #F5F6F9;
@@ -10063,7 +10066,7 @@ body .search-modal .close:hover {
   padding: 60px 0 30px;
 }
 .rs-footer .footer-top .footer-logo img {
-  height: 40px;
+  height: 100px;
 }
 .rs-footer .footer-top .widget-title {
   font-size: 22px;
@@ -10853,6 +10856,17 @@ body .search-modal .close:hover {
 .fadeInRight {
   animation-duration: 2s;
   animation-name: fadeInRight;
+}
+@media only screen and (max-width: 991px) {
+    .full-width-header .rs-header .topbar-area {
+        display: block !important;
+    }
+    .full-width-header .rs-header .topbar-area .col-lg-10{
+      display: none !important;
+  }
+  .logo-part {
+    height: auto !important;
+  }
 }
 @keyframes  {
   0% {
