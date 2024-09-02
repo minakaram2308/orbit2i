@@ -250,7 +250,7 @@ body.nav-expanded .offwrap {
   padding-bottom: 215px;
 }
 .rs-call-us .image-part img {
-  max-height: 585px;
+  max-height: 500px;
 }
 .text-right {
   text-align: right;
@@ -10060,7 +10060,7 @@ body .search-modal .close:hover {
   background-position: center;
 }
 .rs-footer .footer-top {
-  padding: 92px 0 65px;
+  padding: 60px 0 30px;
 }
 .rs-footer .footer-top .footer-logo img {
   height: 40px;
@@ -10196,6 +10196,7 @@ body .search-modal .close:hover {
 }
 .rs-footer .footer-bottom .copyright p {
   margin: 0;
+  font-size: 0.9rem;
 }
 .rs-footer .footer-bottom .copyright p a {
   color: #454545;
