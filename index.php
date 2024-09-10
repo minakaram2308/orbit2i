@@ -160,107 +160,18 @@ if(isset($_POST['email']) && $_POST['email'] != '' && isset($_POST['name']) && $
       <!--Full width header End-->
 
       <!-- Banner Section Start -->
-      <div class="rs-banner main-home pt-100 pb-100 md-pt-80 md-pb-80">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-7 col-md-12 pr-140 md-mb-140 md-pr-15">
-              <div class="content-wrap">
-                <h1 class="it-title">
-                  IT Consulting Services For Your Business
-                </h1>
-              </div>
-            </div>
-            <div class="col-lg-5 col-md-12 pl-70 md-pl-15">
-              <div class="rs-contact">
-                <div class="contact-wrap">
-                  <div class="content-part mb-25">
-                    <h2 class="title mb-15">Schedule Your Appointment</h2>
-                    <p class="desc">We here to help you 24/7 with experts</p>
-                  </div>
-                  <div id="appointment-messages"></div>
-
-                  <?php 
-                        if( $message_sent ):
-
-                    ?>
-
-                       <h4 class="text-center"> <i class="fa fa-check"></i> Data sent successfully, we will contact you.</h4>
-                    
-                    <?php 
-                       else:
-                    ?>
-                   
-                   <form action="index.php" method="POST" class="contact-form" novalidate="novalidate">
-
-<fieldset>
-  <div class="row">
-    <div class="col-lg-12 mb-15">
-      <input
-        class="from-control"
-        type="text"
-        name="name"
-        placeholder="Name"
-        required=""
-      />
-    </div>
-    <div class="col-lg-12 mb-15">
-      <input
-        class="from-control"
-        type="email"
-        name="email"
-        placeholder="E-Mail"
-        required=""
-      />
-    </div>
-    <div class="col-lg-12 mb-15">
-      <input
-        class="from-control"
-        type="text"
-        name="phone"
-        placeholder="Phone Number"
-        required=""
-      />
-    </div>
-    <div class="col-lg-12 mb-25">
-      <input
-        class="from-control"
-        type="text"
-        name="website"
-        placeholder="Your Website"
-        required=""
-      />
-    </div>
-  </div>
-  <div class="form-group mb-0">
-    <input
-      class="submit-btn"
-      type="submit"
-      value="Submit Now"
-    />
-  </div>
-</fieldset>
-</form>
-
-                    <?php 
-                      endif;
-                    ?>
-
-
-
-
-
-
-
-
+      <div class="rs-banner style10 md-pt-80 md-pb-80">
+                <div class="container my-auto">
+                    <div class="banner-content text-center">
+                        <span class="sub-text">Technology agency</span>
+                        <h2 class="title">IT Consulting Services For Your Business</h2>
+                        <ul class="banner-btn">
+                            <li><a class="readon started more" href="#rs-about">Discover More</a></li>
+                        </ul>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-        </div>
-      </div>
-      <!-- Banner Section End -->
-
-      <!-- About Section Start -->
+ 
       <div
         id="rs-about"
         class="rs-about style1 pt-130 pb-190 md-pt-80 md-pb-80"
@@ -652,6 +563,135 @@ if(isset($_POST['email']) && $_POST['email'] != '' && isset($_POST['name']) && $
         </div>
       </div>
       <!-- Process Section End -->
+
+      <div class="rs-why-choose style2 gray-color rs-rain-animate pt-120 pb-120 md-pt-70 md-pb-80">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-7 md-mb-30">
+                            <div class="sec-title mb-40">
+                                <div class="sub-text style4-bg left">Let's Talk</div>
+                                <h2 class="title pb-20">
+                                    Speak With Expert Engineers.
+                                </h2>
+                                <div class="desc">
+                                    From its medieval origins to the digital era, learn everything there<br>
+                                    is to know about the ubiquitous lorem ipsum passage.
+                                </div>
+                            </div>
+                            <div class="services-wrap mb-25">
+                                <div class="services-icon">
+                                    <img src="assets/images/choose/icons/style2/1.png" alt="">
+                                </div>
+                                <div class="services-text">
+                                    <h3 class="title"><a href="#">Email</a></h3>
+                                    <p class="services-txt"><a href="mailto:A.malek@orbit2i.ca">A.malek@orbit2i.ca</a></p>
+                                </div>
+                            </div>
+                            <div class="services-wrap mb-25">
+                                <div class="services-icon">
+                                    <img src="assets/images/choose/icons/style2/2.png" alt="">
+                                </div>
+                                <div class="services-text">
+                                    <h3 class="title"><a href="#">Call Us</a></h3>
+                                    <p class="services-txt"> <a href="tel:+19024483953">+1-902-448-3953</a></p>
+                                </div>
+                            </div>
+                            <div class="services-wrap">
+                                <div class="services-icon">
+                                    <img src="assets/images/choose/icons/style2/3.png" alt="">
+                                </div>
+                                <div class="services-text">
+                                    <h3 class="title"><a href="#">Office Address</a></h3>
+                                    <p class="services-txt">5144 Morris St, Halifax, NS</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="rs-contact mod1">
+                                <div class="contact-wrap">
+                  <div class="content-part mb-25">
+                    <h2 class="title mb-15">Schedule Your Appointment</h2>
+                    <p class="desc">We here to help you 24/7 with experts</p>
+                  </div>
+                  <div id="appointment-messages"></div>
+
+                  <?php 
+                        if( $message_sent ):
+
+                    ?>
+
+                       <h4 class="text-center"> <i class="fa fa-check"></i> Data sent successfully, we will contact you.</h4>
+                    
+                    <?php 
+                       else:
+                    ?>
+                   
+                   <form action="index.php" method="POST" class="contact-form" novalidate="novalidate">
+
+<fieldset>
+  <div class="row">
+    <div class="col-lg-12 mb-15">
+      <input
+        class="from-control"
+        type="text"
+        name="name"
+        placeholder="Name"
+        required=""
+      />
+    </div>
+    <div class="col-lg-12 mb-15">
+      <input
+        class="from-control"
+        type="email"
+        name="email"
+        placeholder="E-Mail"
+        required=""
+      />
+    </div>
+    <div class="col-lg-12 mb-15">
+      <input
+        class="from-control"
+        type="text"
+        name="phone"
+        placeholder="Phone Number"
+        required=""
+      />
+    </div>
+    <div class="col-lg-12 mb-25">
+      <input
+        class="from-control"
+        type="text"
+        name="website"
+        placeholder="Your Website"
+        required=""
+      />
+    </div>
+  </div>
+  <div class="form-group mb-0">
+    <input
+      class="submit-btn"
+      type="submit"
+      value="Submit Now"
+    />
+  </div>
+</fieldset>
+</form>
+
+                    <?php 
+                      endif;
+                    ?>
+
+                </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <div class="line-inner">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </div>
     </div>
     <!-- Main content End -->
 

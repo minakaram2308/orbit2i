@@ -3954,10 +3954,12 @@ body .search-modal .close:hover {
 .rs-banner.style10 {
   background-image: url(../images/banner/banner14.jpg);
   background-repeat: no-repeat;
+  height: calc(100vh - 100px);
+  display: flex;
 }
-.rs-banner.style10 .banner-content {
+/* .rs-banner.style10 .banner-content {
   padding: 305px 0 350px;
-}
+} */
 .rs-banner.style10 .banner-content .sub-text {
   font-size: 14px;
   line-height: 28px;
@@ -5187,7 +5189,7 @@ body .search-modal .close:hover {
   align-items: center;
 }
 .rs-why-choose.style2 .services-wrap .services-icon {
-  padding: 5px 5px 0 0;
+  padding: 0px 5px 0 0;
 }
 .rs-why-choose.style2 .services-wrap .services-icon img {
   height: 55px;
