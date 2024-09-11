@@ -163,7 +163,6 @@ if(isset($_POST['email']) && $_POST['email'] != '' && isset($_POST['name']) && $
       <div class="rs-banner style10 md-pt-80 md-pb-80">
                 <div class="container my-auto">
                     <div class="banner-content text-center">
-                        <span class="sub-text">Technology agency</span>
                         <h2 class="title">IT Consulting Services For Your Business</h2>
                         <ul class="banner-btn">
                             <li><a class="readon started more" href="#rs-about">Discover More</a></li>
@@ -250,11 +249,6 @@ if(isset($_POST['email']) && $_POST['email'] != '' && isset($_POST['name']) && $
                         <p class="skillbar-bar"></p>
                         <span class="skill-bar-percent"></span>
                       </div>
-                      <div class="btn-part mt-55">
-                        <a class="readon learn-more" href="#rs-header">
-                          Schedule Consultation</a
-                        >
-                      </div>
                     </div>
                   </div>
                 </div>
@@ -299,8 +293,7 @@ if(isset($_POST['email']) && $_POST['email'] != '' && isset($_POST['name']) && $
                   </div>
                   <div class="services-desc">
                     <p>
-                      At vero eos et accusamus etiusto odio praesentium
-                      accusamus etiusto odio data center for managing database.
+                    We create tailored IT strategies to align with your business goals, optimize operations, and drive growth.
                     </p>
                   </div>
                 </div>
@@ -324,8 +317,7 @@ if(isset($_POST['email']) && $_POST['email'] != '' && isset($_POST['name']) && $
                   </div>
                   <div class="services-desc">
                     <p>
-                      At vero eos et accusamus etiusto odio praesentium
-                      accusamus etiusto odio data center for managing database.
+                    Enhance scalability and efficiency with secure cloud migration, integration, and management services.
                     </p>
                   </div>
                 </div>
@@ -351,8 +343,7 @@ if(isset($_POST['email']) && $_POST['email'] != '' && isset($_POST['name']) && $
                   </div>
                   <div class="services-desc">
                     <p>
-                      At vero eos et accusamus etiusto odio praesentium
-                      accusamus etiusto odio data center for managing database.
+                    Protect your data and systems with comprehensive threat detection and security management.
                     </p>
                   </div>
                 </div>
@@ -378,8 +369,7 @@ if(isset($_POST['email']) && $_POST['email'] != '' && isset($_POST['name']) && $
                   </div>
                   <div class="services-desc">
                     <p>
-                      At vero eos et accusamus etiusto odio praesentium
-                      accusamus etiusto odio data center for managing database.
+                    Connect and manage devices to improve data insights and automate business processes.
                     </p>
                   </div>
                 </div>
@@ -403,8 +393,7 @@ if(isset($_POST['email']) && $_POST['email'] != '' && isset($_POST['name']) && $
                   </div>
                   <div class="services-desc">
                     <p>
-                      At vero eos et accusamus etiusto odio praesentium
-                      accusamus etiusto odio data center for managing database.
+                    Leverage data for insights and decision-making through advanced analytics and visualization.
                     </p>
                   </div>
                 </div>
@@ -428,8 +417,7 @@ if(isset($_POST['email']) && $_POST['email'] != '' && isset($_POST['name']) && $
                   </div>
                   <div class="services-desc">
                     <p>
-                      At vero eos et accusamus etiusto odio praesentium
-                      accusamus etiusto odio data center for managing database.
+                    Implement AI technologies to enhance business processes and drive innovation.
                     </p>
                   </div>
                 </div>
@@ -466,7 +454,7 @@ if(isset($_POST['email']) && $_POST['email'] != '' && isset($_POST['name']) && $
                   </p>
                 </div>
                 <div class="btn-part mt-40">
-                  <a class="readon lets-talk" href="#rs-header">Let's Talk</a>
+                  <a class="readon lets-talk" href="#rs-contact">Let's Talk</a>
                 </div>
               </div>
             </div>
@@ -487,11 +475,7 @@ if(isset($_POST['email']) && $_POST['email'] != '' && isset($_POST['name']) && $
                     Our Proven Process for Strategic IT Solutions
                   </h2>
                 </div>
-                <div class="btn-part mt-40">
-                  <a class="readon learn-more contact-us" href="contact.html"
-                    >Contact Us</a
-                  >
-                </div>
+
               </div>
             </div>
             <div class="col-lg-8 pl-30 md-pl-15">
@@ -564,14 +548,14 @@ if(isset($_POST['email']) && $_POST['email'] != '' && isset($_POST['name']) && $
       </div>
       <!-- Process Section End -->
 
-      <div class="rs-why-choose style2 gray-color rs-rain-animate pt-120 pb-120 md-pt-70 md-pb-80">
+      <div class="rs-why-choose style2 gray-color rs-rain-animate pt-120 pb-120 md-pt-70 md-pb-80" id="rs-contact">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-7 md-mb-30">
                             <div class="sec-title mb-40">
                                 <div class="sub-text style4-bg left">Let's Talk</div>
                                 <h2 class="title pb-20">
-                                    Speak With Expert Engineers.
+                                Speak with our Experts.
                                 </h2>
                                 <div class="desc">
                                     From its medieval origins to the digital era, learn everything there<br>
