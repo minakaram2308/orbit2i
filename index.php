@@ -33,7 +33,7 @@ if(isset($_POST['email']) && $_POST['email'] != '' && isset($_POST['name']) && $
     $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
     
     // More headers
-    $headers .= 'From: <minakaramcs@gmail.com>' . "\r\n";  
+    $headers .= 'From: <mmbaabbad@gmail.com>' . "\r\n";  
 
     if(mail($to,$subject,$msg,$headers)){
         $message_sent = true;
